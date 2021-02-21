@@ -1,4 +1,4 @@
-# My personal project document
+# My personal C Project
 The document includes 
 * C /C++
 * algorithm
