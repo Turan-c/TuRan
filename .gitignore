@@ -3,5 +3,4 @@
 *.exe
 *.out
 /test.c
-/work.c
 /debug.c
