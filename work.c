@@ -6,6 +6,5 @@ int main(int argc, char const *argv[])
 	while((ch = getchar()) != EOF){
 		putchar(ch);
 	}
-		
 	return 0;
 }
