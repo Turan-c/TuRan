@@ -4,3 +4,4 @@
 *.out
 /test.c
 /debug.c
+/work.c
