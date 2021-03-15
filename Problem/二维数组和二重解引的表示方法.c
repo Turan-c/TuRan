@@ -11,7 +11,6 @@ int main(int argc, char const *argv[])
 		{7,8},
 	};
 	int *i = 0, j = 0, k = 0;
-	int (*pz)[2];
 
 
 
@@ -34,7 +33,6 @@ int main(int argc, char const *argv[])
 	printf("%p\n", zippo + 1);
 	printf("%p\n", zippo[0] + 1);
 
-
 	printf("\n");
 	printf("\n");
 
@@ -43,12 +41,9 @@ int main(int argc, char const *argv[])
 	printf("%p\n", i);					//zippo指向的是zippo[0],但是zippo[0]是一个地址,zippo[0]指向的是zippo[0][0]
 	j = **zippo;						//使用两次解引用就可以的到zippo[0][0]的值
 	printf("%d\n", j);
-	pz = zippo;
-	printf("%p\n", pz);					//pz是一个内含两个int类型值的指针,(*pz)的用意是使用[]的优先级高于*,使用括号来给pz优先定义指针
 
 	printf("\n");
 	printf("\n");
-
 
 	k = *(*(zippo + 2) + 1);
 	printf("%d\n", k);
